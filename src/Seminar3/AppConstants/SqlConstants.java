@@ -8,3 +8,4 @@ public class SqlConstants {
     public static String sqlSelect = "SELECT * FROM employees";
     public static String sqlInsertWithParams = "INSERT INTO employees VALUES (?,?,?,?)";
 }
+
