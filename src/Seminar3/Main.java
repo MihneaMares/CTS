@@ -7,6 +7,8 @@ public class Main {
 
     public static void main(String[] args) {
         SqlOperations sqlDb = new SqlOperations();
+        MongoOperations mongoDb = new MongoOperations();
+
         try {
             Class.forName("org.sqlite.JDBC");
             Connection connection = DriverManager.getConnection("jdbc:sqlite:database.db");
@@ -21,6 +23,4 @@ public class Main {
             e.printStackTrace();
         }
     }
-
-
 }
